@@ -1,70 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>POTTERHEAD-Gallery</title>
+	<title>Gallery | POTTERHEAD</title>
 	<link rel="shortcut icon" type="image/png" href="img/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body class="gal">
 
-<header>
-	<div id="header"></div>
+	<header>
 		<div class="logo">
-			<a href="index.html"><img src="img/logo.png"></a>
+			<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
 		</div>
 		<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="more.html">Learn More</a></li>
-			<li class="active"><a href="gallery.html">Gallery</a></li>
-			<li><a href="about.html">About</a></li>
-		<nav>
-		</ul>
-	</div>
-</header>
+			<ul>
+				<li><a href="index.html" id="navHome"></a></li>
+				<li><a href="more.html" id="navMore"></a></li>
+				<li class="active"><a href="gallery.html" id="navGallery"></a></li>
+				<li><a href="about.html" id="navAbout"></a></li>
+			</ul>
+		</nav>
+	</header>
 
-<section id="main">
-	<div class="box">
-		<center>
-		<h1 class="page-title">Wallpaper</h1>
-		<br><br><br>
-		<div class="gallery">
-		<img src="img/1.jpg">		<img src="img/2.jpg">		<img src="img/8.jpg">
-		<br><br>
-		<img src="img/4.jpg">		<img src="img/5.jpg">		<img src="img/6.jpg">
-		<br><br>
-		<img src="img/7.jpg">		<img src="img/3.jpg">		<img src="img/9.jpg">
-		<br><br>
-		<img src="img/10.jpg">		<img src="img/11.jpg">		<img src="img/12.jpg">
-		<br><br>
-		<img src="img/13.jpg">		<img src="img/14.jpg">		<img src="img/15.jpg">
-		<br><br>
-		<img src="img/16.jpg">		<img src="img/17.jpg">		<img src="img/18.jpg">
-		<br><br>
-		<img src="img/19.jpg">		<img src="img/20.jpg">		<img src="img/21.jpg">
-		<br><br>
-		<img src="img/22.jpg">		<img src="img/23.jpg">		<img src="img/24.jpg">
-		<br><br>
-		<img src="img/25.jpg">		<img src="img/26.jpg">		<img src="img/27.jpg">
-		<br><br>
-		<img src="img/28.jpg">		<img src="img/29.jpg">		<img src="img/30.jpg">
-		<br><br>
-		<img src="img/31.jpg">		<img src="img/32.jpg">		<img src="img/33.jpg">
-		<br><br>
-		<img src="img/34.jpg">		<img src="img/35.jpg">		<img src="img/36.jpg">
-		<br><br>
-		<img src="img/37.jpg">		<img src="img/38.jpg">		<img src="img/39.jpg">
-		<br><br>
-		<p style="text-align:center">ccto</p>
-		<br><br>
-		</center>
+	<section id="main-gallery">
+		<div class="container">
+			<h1 class="page-title" id="pageTitle"></h1>
+
+			<div class="gallery" id="gallery"></div>
+
 		</div>
-	</div>
-</section>
+	</section>
 
-<div class="footer">
-		<p>IT111, First Semester &copy; 2018</p>
-	</div>
-	
+	<footer class="footer">
+		<p id="generic"></p>
+	</footer>
+
+	<script src="js/contentLoader.js"></script>
+	<script>
+		loadPageContent("gallery");
+	</script>
+
+	<script src="js/navScroll.js"></script>
+	<script src="js/gallery.js"></script>
+
 </body>
+
 </html>

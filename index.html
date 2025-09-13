@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Home|POTTERHEAD</title>
-	<link rel="shortcut icon" type="image/png" href="img/logo.png">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Home | POTTERHEAD</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body class="home">
 
-<header>
-	<div id="header"></div>
-		<div class="logo">
-			<a href="index.html"><img src="img/logo.png"></a>
-		</div>
-		<nav>
-		<ul>
-			<li class="active"><a href="index.html">Home</a></li>
-			<li><a href="more.html">Learn More</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="about.html">About</a></li>
-		<nav>
-		</ul>
-	</div>
-	
-	<div class="top-left">
-		<p>Potterhead.com</a></p><!--online website-->
-	</div>
-</header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <p>Potterhead.com</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html" id="navHome"></a></li>
+                <li><a href="more.html" id="navMore"></a></li>
+                <li><a href="gallery.html" id="navGallery"></a></li>
+                <li><a href="about.html" id="navAbout"></a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<div class="title">
-		<h1>WELCOME!</h1>
-	</div>
-	
-	<div class="title1">
-		<p>to the <br/>Wizarding world of Harry Potter</p>
-	</div>
-	
-	<div class="button">
-		<a href="https://www.pottermore.com" class="btn">Pottermore.com</a>
-	</div>
-	
-	<div class="footer">
-		<p>IT111, First Semester &copy; 2018</p>
-	</div>
+    <section id="main-home">
+        <div class="container">
+
+            <div class="title">
+                <h1 id="welcomeMsg"></h1>
+            </div>
+
+            <div class="button">
+                <a href="https://www.pottermore.com" class="btn" id="btn"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p id="generic"></p>
+    </footer>
+
+    <script src="js/navScroll.js"></script>
+    <script src="js/contentLoader.js"></script>
+    <script>
+        loadPageContent("home");
+    </script>
+
 </body>
+
 </html>

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>POTTERHEAD-About</title>
+	<title>About | POTTERHEAD</title>
 	<link rel="shortcut icon" type="image/png" href="img/logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body class="about">
 
-<header>
-	<div id="header"></div>
-		<div class="main">
-			<div class="logo">
-			<a href="index.html"><img src="img/logo.png"></a>
-</header>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
 		</div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="more.html">Learn More</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li class="active"><a href="about.html">About</a></li>
+				<li><a href="index.html" id="navHome"></a></li>
+				<li><a href="more.html" id="navMore"></a></li>
+				<li><a href="gallery.html" id="navGallery"></a></li>
+				<li class="active"><a href="about.html" id="navAbout"></a></li>
 			</ul>
 		</nav>
-		</div>
+	</header>
 
-	<div class="footer">
-		<p>IT111, First Semester &copy; 2018</p>
-	</div>
-</header>
+	<footer class="footer">
+		<p id="generic"></p>
+	</footer>
 
-<div class="footer">
-		<p>IT111, First Semester &copy; 2018</p>
-	</div>
-	
+	<script src="js/navScroll.js"></script>
+	<script src="js/contentLoader.js"></script>
+	<script>
+		loadPageContent("about");
+	</script>
+
 </body>
+
 </html>
