@@ -1,5 +1,5 @@
 function loadPageContent(pageKey) {
-    fetch('JSON/content.json')
+    fetch('json/content.json')
         .then(res => res.json())
         .then(data => {
             if (data.header) populateExistingElements(data.header);
